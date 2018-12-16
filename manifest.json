@@ -1,0 +1,27 @@
+{
+
+  "description": "Ini Adalah addons Firefox untuk pemanggilan pengunjung menggunakan google voice",
+  "manifest_version": 2,
+  "name": "Pemanggil",
+  "version": "1.0",
+  "homepage_url": "https://github.com/usermh99",
+  "author": "usermh99",  
+  "icons": {
+    "48": "icon/sCustom.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://simpeg.kemenkumham.go.id/devp/siap/skp_journal.php"],
+      "js": [
+	  "j/jquery-1.8.3.js",
+	  "j/jquery-ui.min.js",
+	  "simpegCustom.js"
+	  ]
+    }
+  ],
+    "permissions": [
+    "<all_urls>",
+    "storage",
+  ]
+
+}
