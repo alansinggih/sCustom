@@ -1,13 +1,12 @@
 {
 
-  "description": "Ini Adalah addons Firefox untuk pemanggilan pengunjung menggunakan google voice",
   "manifest_version": 2,
-  "name": "Pemanggil",
+  "name": "sCustom",
   "version": "1.0",
-  "homepage_url": "https://github.com/usermh99",
-  "author": "usermh99",  
+  "description": "Ini Adalah addons Firefox untuk memudahkan",
+  "homepage_url": "https://github.com/usermh99/sCustom",
   "icons": {
-    "48": "icon/sCustom.png"
+    "48": "icon/TAG.png"
   },
   "content_scripts": [
     {
@@ -15,13 +14,19 @@
       "js": [
 	  "j/jquery-1.8.3.js",
 	  "j/jquery-ui.min.js",
-	  "simpegCustom.js"
 	  ]
+
     }
   ],
     "permissions": [
-    "<all_urls>",
-    "storage",
-  ]
+    "<all_urls>", "storage"]
+    ,
+	 "browser_action": {
+    "default_icon": "icon/TAG.png",
+    "default_title": "sCustom-Memudahkan",
+     },
+	"background": {
+    "scripts": ["j/sCustom.js"]
+  }
 
 }
