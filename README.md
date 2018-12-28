@@ -1,3 +1,4 @@
-# sCustom
+# SmPg-android
 
-**Projek ini untuk `addons.mozilla.org`.**
+**Add on ini digunakan untuk memudahkan kegiatan**
+
