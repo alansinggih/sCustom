@@ -10,12 +10,17 @@ $('#tambah').click(function(){
 rubahbox();
 }) 
     $('.logoSimpegSmall').click(function(){
-    var xx = $('.lb2').length;
-    if (xx >0) {
-    alert("Error,\nJangan klik Logo yang kedua kalinya!!!")
+    var c = $("select[id='skpkgid'] option").attr('value')
+    if (c==undefined){
+    alert("Tidak Ditemukan SKP")
     }else{
-    eksekusi()
-    alert("Berhasill...\n");
+        var xx = $('.lb2').length;
+        if (xx >0) {
+        alert("Error,\nJangan klik Logo yang kedua kalinya!!!")
+        }else{
+        eksekusi()
+        alert("Berhasill...\n");
+        }
     }
 });
  /*<------fungsi untuk rubah tanggal--------->*/
